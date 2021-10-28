@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.top-left-nav {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+  gap: 20px;
+}
+.top-left-nav button {
+  font-size: 24px;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: "Zen Kaku Gothic Antique";
+  width: auto;
+}
+
+.YoutubeLogo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.YoutubeLogo img {
+  height: 30px;
+  width: 30px;
+}
+.YoutubeLogo p {
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  font-family: "Oswald";
+}
+
+.top-middle-nav {
+  display: flex;
+  margin-right: 50px;
+  gap: 0;
+}
+#search {
+  width: 575px;
+  font-size: 17px;
+  height: 38px;
+  padding-left: 10px;
+  margin-right: -5px;
+}
+#searchButton {
+  width: 65px;
+  height: 42px;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 0;
+  outline: none;
+}
+.top-middle-nav button {
+  height: 44px;
+  width: 44px;
+  font-size: 18px;
+}
+#voiceMic {
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.top-right-nav {
+  display: flex;
+  margin-right: 25px;
+  align-items: center;
+  gap: 30px;
+}
+.sideNavButton {
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+}
+#gridIcon {
+  height: 30px;
+}
+
+#profilePhoto {
+  height: 30px;
+  width: 30px;
+
+  border-radius: 50%;
+}
+
+.sideNavBar {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sideNavIcon {
+  margin-top: 22px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  height: 50px;
+  justify-content: center;
+  cursor: pointer;
+  gap: 5px;
+}
+.sideNavIcon:hover {
+  background-color: lightgray;
+}
+
+svg {
+  height: 22px;
+  width: 22px;
+}
+
+.content-box {
+  height: calc(100vh - 60px);
+  width: calc(100vw - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.categories {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  height: 50px;
+  align-items: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding-left: 15px;
+}
+#category:first-child {
+  background-color: black;
+  color: white;
+}
+#category {
+  width: auto;
+  height: 30px;
+  border-radius: 15px;
+  padding: 5px 10px;
+  border: 0.1px solid gray;
+}
+.mainvideoContainer {
+  height: calc(100% - 52px);
+  width: 70%;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  overflow: auto;
+}
+
+.suggestionContainer {
+  height: calc(100% - 52px);
+  overflow: auto;
+  width: 30%;
+}
+
+#currentVideo {
+  width: 100%;
+  height: 450px;
+}
+
+.currentVideoInfo {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  margin-bottom: 1px solid gray;
+}
+
+.currentVideoActions {
+  display: flex;
+  width: 80px;
+  height: 50px;
+  position: absolute;
+  right: 300px;
+  bottom: 0;
+  gap: 30px;
+}
+
+.videoTitle {
+  height: 100%;
+  line-height: 25px;
+  width: 70%;
+  margin-left: 10px;
+}
+#tags {
+  color: blue;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+#title {
+  font-size: 22px;
+}
+
+#uploadInfo {
+  color: gray;
+}
+
+.currentVideoActions > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.currentVideoActions > span > button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+#channel {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 500px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.channelInfo {
+  height: 75px;
+  border-top: 1px solid lightgray;
+  width: 100%;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.channelName {
+  display: flex;
+}
+
+.channelName img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+#videoTitle {
+  font-size: 22px;
+}
+#subscriberCount {
+  font-size: 14px;
+  color: gray;
+}
+.subscribeBox {
+  display: flex;
+  float: right;
+  margin-top: -40px;
+  margin-right: 20px;
+  align-items: center;
+  gap: 12px;
+}
+
+#subscribeButton {
+  width: 100px;
+  height: 35px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+}
+
+#videoNotification {
+  font-size: 25px;
+  height: 20px;
+}
+
+.videoDescription {
+  padding-left: 8%;
+  height: auto;
+  width: 92%;
+  min-height: 100px;
+  cursor: pointer;
+}
+#fullDescription {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#fullDescrptionText {
+  display: none;
+}
+.playlistVideoContainer {
+  width: 100%;
+  display: flex;
+  margin-left: 10px;
+  padding: 20px 0 20px 0;
+  height: 100px;
+  border-bottom: 1px solid lightgray;
+}
+
+.playlistVideo iframe {
+  height: 100px;
+  width: 150px;
+  float: left;
+}
+.playlistVideoTitle {
+  width: 250px;
+  line-height: 25px;
+}
+.playlistVideoTitle p {
+  margin-left: 15px;
+  font-size: larger;
+}
+#suggestionChannelName {
+  color: gray;
+  font-size: 16px;
+}
+#suggestionDate {
+  font-size: 15px;
+}

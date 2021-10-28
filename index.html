@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="./assets/scripts/script.js" defer></script>
+    <title>YouTube</title>
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="top-left-nav">
+        <button id="sideNavToggleButton">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="YoutubeLogo">
+          <img src="./assets/images/favicon.png" />
+          <p>YouTube</p>
+        </div>
+      </div>
+      <div class="top-middle-nav">
+        <div class="searchBar">
+          <input id="search" placeholder="Search" />
+          <button id="searchButton"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="voiceButton">
+          <button id="voiceMic">
+            <i class="fa fa-microphone" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <div class="top-right-nav">
+        <button class="sideNavButton create">
+          <i class="fa fa-video-camera" aria-hidden="true"></i>
+        </button>
+        <button class="sideNavButton apps">
+          <svg
+            id="gridIcon"
+            viewBox="0 0 24 24"
+            preserveAspectRatio="xMidYMid meet"
+            focusable="false"
+            class="style-scope yt-icon"
+            style="pointer-events: none; display: block"
+          >
+            <g class="style-scope yt-icon">
+              <path
+                d="M16,4v4h4V4H16z M19,7h-2V5h2V7z M16,10v4h4v-4H16z M19,13h-2v-2h2V13z M10,4v4h4V4H10z M13,7h-2V5h2V7z M10,10v4h4v-4H10z M13,13h-2v-2h2V13z M16,16v4h4v-4H16z M19,19h-2v-2h2V19z M10,16v4h4v-4H10z M13,19h-2v-2h2V19z M4,4v4h4V4H4z M7,7H5V5h2V7z M4,10 v4h4v-4H4z M7,13H5v-2h2V13z M4,16v4h4v-4H4z M7,19H5v-2h2V19z"
+                class="style-scope yt-icon"
+              ></path>
+            </g>
+          </svg>
+        </button>
+        <button class="sideNavButton notification">
+          <i class="fa fa-bell-o" aria-hidden="true"></i>
+        </button>
+        <button class="sideNavButton profile">
+          <img src="./assets/images/profile.png" id="profilePhoto" />
+        </button>
+      </div>
+    </div>
+    <div style="display: flex">
+      <div class="sideNavBar">
+        <div class="sideNavIcon home">
+          <svg
+            viewBox="0 0 24 24"
+            preserveAspectRatio="xMidYMid meet"
+            focusable="false"
+            class="style-scope yt-icon"
+            style="pointer-events: none; display: block"
+          >
+            <g class="style-scope yt-icon">
+              <path
+                d="M4,10V21h6V15h4v6h6V10L12,3Z"
+                class="style-scope yt-icon"
+              ></path>
+            </g>
+          </svg>
+          <p>Home</p>
+        </div>
+        <div class="sideNavIcon home">
+          <svg
+            viewBox="0 0 24 24"
+            preserveAspectRatio="xMidYMid meet"
+            focusable="false"
+            class="style-scope yt-icon"
+            style="pointer-events: none; display: block"
+          >
+            <g class="style-scope yt-icon">
+              <path
+                d="M9.8,9.8l-3.83,8.23l8.23-3.83l3.83-8.23L9.8,9.8z M13.08,12.77c-0.21,0.29-0.51,0.48-0.86,0.54 c-0.07,0.01-0.15,0.02-0.22,0.02c-0.28,0-0.54-0.08-0.77-0.25c-0.29-0.21-0.48-0.51-0.54-0.86c-0.06-0.35,0.02-0.71,0.23-0.99 c0.21-0.29,0.51-0.48,0.86-0.54c0.35-0.06,0.7,0.02,0.99,0.23c0.29,0.21,0.48,0.51,0.54,0.86C13.37,12.13,13.29,12.48,13.08,12.77z M12,3c4.96,0,9,4.04,9,9s-4.04,9-9,9s-9-4.04-9-9S7.04,3,12,3 M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2 L12,2z"
+                class="style-scope yt-icon"
+              ></path>
+            </g>
+          </svg>
+          <p>Explore</p>
+        </div>
+        <div class="sideNavIcon home">
+          <svg
+            viewBox="0 0 24 24"
+            preserveAspectRatio="xMidYMid meet"
+            focusable="false"
+            class="style-scope yt-icon"
+            style="pointer-events: none; display: block"
+          >
+            <g class="style-scope yt-icon">
+              <path
+                d="M10,18v-6l5,3L10,18z M17,3H7v1h10V3z M20,6H4v1h16V6z M22,9H2v12h20V9z M3,10h18v10H3V10z"
+                class="style-scope yt-icon"
+              ></path>
+            </g>
+          </svg>
+          <p>Subscriptions</p>
+        </div>
+        <div class="sideNavIcon home">
+          <svg
+            viewBox="0 0 24 24"
+            preserveAspectRatio="xMidYMid meet"
+            focusable="false"
+            class="style-scope yt-icon"
+            style="pointer-events: none; display: block"
+          >
+            <g class="style-scope yt-icon">
+              <path
+                d="M11,7l6,3.5L11,14V7L11,7z M18,20H4V6H3v15h15V20z M21,18H6V3h15V18z M7,17h13V4H7V17z"
+                class="style-scope yt-icon"
+              ></path>
+            </g>
+          </svg>
+          <p>Library</p>
+        </div>
+      </div>
+      <div class="content-box">
+        <div class="categories">
+          <button id="category">All</button>
+          <button id="category">Music</button>
+          <button id="category">Mixes</button>
+          <button id="category">Live</button>
+          <button id="category">Bhajan Music</button>
+          <button id="category">Javascript</button>
+          <button id="category">Programming</button>
+          <button id="category">Development</button>
+          <button id="category">JTC</button>
+          <button id="category">Courses</button>
+          <button id="category">Job Interview</button>
+        </div>
+        <div class="mainvideoContainer">
+          <iframe
+            id="currentVideo"
+            src="https://www.youtube.com/embed/M65xBewcqcI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="currentVideoInfo">
+            <div class="videoTitle">
+              <p id="tags">#dsa #leetcode #placements</p>
+              <p id="title">
+                Set Matrix Zeros | Leetcode | C++ | Java | Brute-Better-Optimal
+              </p>
+              <p id="uploadInfo">59,328 views 7 Aug 2020</p>
+            </div>
+            <div class="currentVideoActions">
+              <span
+                ><button id="like">
+                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                </button>
+                <p id="likeCount">1132</p>
+              </span>
+              <span
+                ><button id="dislike">
+                  <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                </button>
+                <p id="dislikeCount">897</p>
+              </span>
+              <span
+                ><button id="shareIcon">
+                  <i class="fa fa-share" aria-hidden="true"></i>
+                </button>
+                <p id="share">Share</p>
+              </span>
+              <span
+                ><button id="saveIcon">
+                  <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                </button>
+                <p id="save">Save</p>
+              </span>
+              <span
+                ><button id="saveIcon">
+                  <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </button>
+                <p id="save"></p>
+              </span>
+            </div>
+          </div>
+          <div class="channelInfo">
+            <div id="channel">
+              <div class="channelName">
+                <img src="./assets/images/channelLogo.jpg" />
+              </div>
+              <div>
+                <p id="videoTitle">take U forward</p>
+                <p id="subscriberCount">120k subscribers</p>
+              </div>
+            </div>
+            <div class="subscribeBox">
+              <button id="subscribeButton">Subscribe</button>
+              <i
+                class="fa fa-bell-o"
+                id="videoNotification"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+          <div class="videoDescription">
+            <p>
+              I have decided to make a free placement series comprising of video
+              lectures on the entire SDE sheet..
+            </p>
+            <br />
+            <p id="fullDescrptionText">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              animi ad iusto doloribus accusantium amet quidem dolorum numquam
+              aperiam atque assumenda distinctio doloremque cum, rerum
+              consequatur vel. Odio molestiae dolorum, officia porro ex dicta
+              reiciendis autem tenetur nihil recusandae nesciunt unde inventore
+              ducimus molestias adipisci praesentium in excepturi consectetur
+              exercitationem rerum explicabo architecto ullam? Nam repellat
+              mollitia, officia aperiam quod delectus voluptatum. Unde repellat
+              necessitatibus aperiam ad alias voluptate veritatis recusandae
+              error quisquam nostrum in aspernatur ea aliquid beatae, voluptates
+              quos, debitis praesentium quo! Quos dolorem voluptatibus impedit
+              in! Voluptatum, vero! Repudiandae magnam similique iure non
+              possimus tempore numquam sit pariatur repellendus amet eius
+              blanditiis, iste maxime velit, sed, eligendi sapiente! Nostrum
+              iste architecto quisquam tenetur dolor, voluptas, hic sapiente
+              aperiam modi enim minus, temporibus doloremque ex repellat magnam
+              maxime excepturi perspiciatis quod quaerat repellendus explicabo.
+              Aliquam eligendi veritatis inventore laboriosam nesciunt? Facilis,
+              ipsam tempora laborum mollitia voluptatem atque deserunt nulla
+              officiis, repellendus perferendis rem harum delectus similique
+              eius, ab earum suscipit odit distinctio necessitatibus quidem.
+              Libero quo, vero nulla consequuntur facere ipsum ex itaque cum eos
+              illum natus, nesciunt quos corrupti iusto cumque odio temporibus
+              voluptate laboriosam. Doloremque eveniet hic, similique voluptates
+              eius temporibus! Voluptate voluptas fuga laudantium molestiae?<br>
+            </p>
+            <br />
+            <button id="fullDescription">Show more</button>
+          </div>
+
+        </div>
+
+        <div class="suggestionContainer">
+          
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
