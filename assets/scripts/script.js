@@ -54,3 +54,18 @@ function show() {
   ShowMore.textContent = "Show less";
   ShowMore.onclick = showless;
 }
+
+let subscribeButton = document.getElementById("subscribeButton");
+let clicked = false;
+
+subscribeButton.onclick = () => {
+  if (!clicked) {
+    subscribeButton.style["background-color"] = "gray";
+    subscribeButton.textContent = "Subscribed";
+    clicked = true;
+  } else {
+    subscribeButton.style["background-color"] = "red";
+    subscribeButton.textContent = "Subscribe";
+    clicked = false;
+  }
+};

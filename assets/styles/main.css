@@ -298,7 +298,7 @@ svg {
   display: none;
 }
 .playlistVideoContainer {
-  width: 100%;
+  width: calc(100% - 10px);
   display: flex;
   margin-left: 10px;
   padding: 20px 0 20px 0;
@@ -325,4 +325,17 @@ svg {
 }
 #suggestionDate {
   font-size: 15px;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #a29a9a;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
 }
