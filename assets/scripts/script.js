@@ -69,3 +69,56 @@ subscribeButton.onclick = () => {
     clicked = false;
   }
 };
+
+let bellIsClicked = false;
+let videoNotification = document.getElementById("videoNotification");
+
+videoNotification.onclick = () => {
+  if (!bellIsClicked) {
+    videoNotification.classList.remove("fa-bell-o");
+    videoNotification.classList.add("fa-bell");
+    bellIsClicked = true;
+  } else {
+    videoNotification.classList.remove("fa-bell");
+    videoNotification.classList.add("fa-bell-o");
+    bellIsClicked = false;
+  }
+};
+
+let likeIsClicked = false;
+let like = document.getElementById("likes");
+let likeCount = document.getElementById("likeCount");
+
+like.onclick = () => {
+  if (!likeIsClicked) {
+    like.classList.remove("fa-thumbs-o-up");
+    like.classList.add("fa-thumbs-up");
+    likeIsClicked = true;
+    console.log();
+    likeCount.textContent = Number(likeCount.textContent) + 1;
+  } else {
+    like.classList.remove("fa-thumbs-up");
+    like.classList.add("fa-thumbs-o-up");
+    likeIsClicked = false;
+    likeCount.textContent = Number(likeCount.textContent) - 1;
+  }
+};
+
+let dislikeIsClicked = false;
+let dislike = document.getElementById("dislikes");
+let dislikeCount = document.getElementById("dislikeCount");
+
+dislike.onclick = () => {
+  if (!dislikeIsClicked) {
+    dislikes.classList.remove("fa-thumbs-o-down");
+    dislikes.classList.add("fa-thumbs-down");
+    dislikeIsClicked = true;
+    console.log();
+    dislikeCount.textContent = Number(dislikeCount.textContent) + 1;
+  } else {
+    dislikes.classList.remove("fa-thumbs-down");
+    dislikes.classList.add("fa-thumbs-o-down");
+    dislikeIsClicked = false;
+    dislikeCount.textContent = Number(dislikeCount.textContent) - 1;
+  }
+};
